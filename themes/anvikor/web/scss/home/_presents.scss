@@ -1,0 +1,248 @@
+.presents{
+	&__text{
+		width: 37%;
+		margin-right: 30px;
+	}
+	&__btn{
+		margin: 30px 0 80px;
+	}
+	&__img{
+		width: 63%;
+	}
+	&-img{
+		position: relative;
+		&__main{
+			width: 339px;
+		}
+	}
+	&-one{
+		&__btn{
+			top: 100px;
+			left: 185px;
+		}
+		&__svg{
+			.svg-1{
+				top: 13px;
+			}
+			.svg-2{
+				top: 246px;
+			}
+			.svg-3{
+				top: 395px;
+			}
+			&.active{
+				opacity: 1;
+			}
+		}
+		&__tooltip{
+			top: 40px;
+		}
+	}
+	&-two{
+		&__btn{
+			top: 250px;
+			left: 200px;
+		}
+		&__svg{
+			.svg-1{
+				top: 29%;
+			}
+		}
+		&__tooltip{
+			top: 43%;
+			transform: translateY(-50%);
+		}
+	}
+	&-three{
+		&__btn{
+			bottom: 260px;
+			left: 160px;
+		}
+		&__svg{
+			.svg-1{
+				top: -80px;
+			}
+			.svg-2{
+				bottom: 165px;
+			}
+		}
+		&__tooltip{
+			bottom: 200px;
+		}
+	}
+}
+.presents-btn{
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	background-image: url(../images/icon/btn.svg);
+	background-repeat: no-repeat;
+	transform: rotate(0deg);
+	opacity: 0.7;
+	cursor: pointer;
+	transition: .3s;
+	z-index: 5;
+	&:hover{
+		opacity: 1;
+		transition: .3s;
+	}
+	&.active{
+		transform: rotate(225deg);
+		opacity: 1;
+		transition: .3s;
+	}
+}
+.presents-svg{
+	opacity: 0;
+	img{
+		position: absolute;
+		left: 24%;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+	&.active{
+		opacity: 1;
+		transition: .3s;
+	}
+}
+.presents-tooltip{
+	position: absolute;
+	right: 0;
+	width: 60%;
+	padding: 30px 20px;
+	border: 1px solid #D9DDE8;
+	border-radius: 10px;
+	background-color: #fff;
+	opacity: 0;
+	transition: .3s;
+	z-index: 2;
+	&:before{
+	    content: '';
+	    position: absolute;
+	    left: -8px;
+	    top: 50%;
+	    width: 15px;
+	    height: 15px;
+	    border-top: 1px solid #D9DDE8;
+	    border-left: 1px solid #D9DDE8;
+	    background-color: #fff;
+	    transform: translateY(-50%) skew(6deg) rotate(-38deg);
+	    z-index: 5;
+	}
+	&.active{
+		opacity: 1;
+		transition: .3s;
+	}
+}
+
+@media (max-width: 1580px){
+	.presents{
+		&-img{
+			&__main{
+				width: 250px;
+			}
+		}
+		&-one{
+			&__svg{
+				.svg-1{
+					width: 150px;
+					top: 10px;
+				}
+				.svg-2{
+					width: 31px;
+					top: 182px;
+				}
+				.svg-3{
+					width: 31px;
+					top: 293px;
+				}
+			}
+			&__btn{
+				top: 71px;
+				left: 151px;
+			}
+			&__tooltip{
+				top: 40px;
+			}
+		}
+		&-two{
+			&__btn{
+			    top: 190px;
+    			left: 158px;
+			}
+			&__svg{
+				.svg-1{
+					width: 150px;
+					top: 30%;
+				}
+			}
+			&__tooltip{
+				top: 37%;
+			}
+		}
+		&-three{
+			&__btn{
+				bottom: 190px;
+    			left: 117px;
+			}
+			&__svg{
+				.svg-1{
+					width: 150px;
+					top: -60px;
+				}
+				.svg-2{
+					width: 150px;
+					bottom: 120px;
+				}
+			}
+			&__tooltip{
+				bottom: 155px;
+			}
+		}
+	}
+	.presents-svg{
+		img{
+			left: 18%;
+		}
+	}
+	.presents-btn{
+		width: 31px;
+    	height: 31px;
+	    background-size: 31px;
+	}
+	.presents-tooltip{
+		right: 60px;
+		padding: 20px;
+	}
+}
+@media (max-width: 1270px){
+	.presents-svg{
+		img{
+			left: 22.5%;
+		}
+	}
+	.presents-tooltip{
+		right: 0;
+		font-size: 14px;
+	}
+}
+@media (max-width: 1000px){
+	.presents{
+		&__text{
+			width: 100%;
+			margin-right: 0;
+		}
+		&__btn{
+			margin: 0 0 20px;
+		}
+		&__img{
+			display: none;
+		}
+	}
+}
+@media (max-width: 767px){
+	
+}
+@media (max-width: 600px){
+	
+}

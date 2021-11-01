@@ -1,0 +1,68 @@
+/* Кнопки */ 
+.btn{
+    display: inline-block;
+    border: none;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &:hover, &:active{
+        outline: none !important;
+        box-shadow: none !important;
+        /* color: $color-white;*/
+        transition: all 0.3s linear;
+    }
+    &:focus{
+        outline: thin dotted;
+        /* color: $color-white;*/
+    }
+}
+.btn-white{
+    position: relative;
+    padding: 20px 25px;
+    border: 2px solid transparent;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), radial-gradient(50% 136% at 50% 0%, #00C5B9 0%, #00978E 100%);
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    @include fontF($boxed, 18px, 500, $color-black);
+    &:hover, &:active, &:focus{
+        color: $color-black; 
+        background-color: #fff;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, .1) !important;
+        transition: all 0.3s linear;
+    }
+}
+.btn-green{
+    position: relative;
+    padding: 20px 25px;
+    background: radial-gradient(50% 136% at 50% 0%, #00C5B9 0%, #00978E 100%);
+    border-radius: 5px;
+    text-transform: uppercase;
+    @include fontF($boxed, 18px, 500, $color-white);
+    &:hover, &:active, &:focus{
+        color: $color-white; 
+        background: radial-gradient(50% 136% at 50% 0%, #00C5B9 0%, #00978E 100%);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, .1) !important;
+        transition: all 0.3s linear;
+    }
+}
+
+@media (max-width: 1580px){
+    .btn{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1270px){
+    .btn{
+        padding: 15px 25px;
+    }
+}
+@media (max-width: 1000px){
+    
+}
+@media (max-width: 767px){
+    .btn{
+        padding: 12px 15px;
+    }
+}

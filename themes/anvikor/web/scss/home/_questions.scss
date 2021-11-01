@@ -1,0 +1,62 @@
+.panel{
+    padding-top: 15px;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #EDEDED;
+    .panel-heading{
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+        border-top: 1px solid #EDEDED;
+        background-color: transparent;
+        &:first-child{
+            border-top: none;
+        }
+        a{
+            display: block;
+            position: relative;
+            padding: 25px 0;
+            padding-left: 50px;
+            @include fontF($boxed, 24px, 500, $color-black);
+            &:before{
+                content: url(../images/icon/down1.svg);
+                position: absolute;  
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%) rotate(0deg);
+                transition: all 0.4s ease;
+            }
+        }
+        .active{
+            color: $color-green;
+            &:before{
+                content: url(../images/icon/down.svg);
+                transform: translateY(-50%) rotate(180deg);
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}
+
+@media (max-width: 1580px){
+    .panel .panel-heading a{
+        padding: 15px 0;
+        padding-left: 50px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 1000px){
+    
+}
+@media (max-width: 767px){
+    .panel .panel-heading a{
+        padding: 5px 0;
+        padding-left: 50px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px){
+    
+}

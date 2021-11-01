@@ -1,0 +1,36 @@
+.sertificate{
+	&-block{
+		position: relative;
+		width: calc(100% + 30px); 
+		margin: 0 -15px;
+	}
+	&__item{
+		width: calc(100% / 3 - 30px);
+		margin: 0 15px;
+		img{
+		max-height: 540px;
+			
+		}
+	}
+}
+
+@media (max-width: 1580px){
+	.sertificate__item img{
+	    max-height: 400px;
+    	margin: 0 auto;
+	}
+}
+@media (max-width: 1270px){
+	.sertificate-title{
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 1000px){
+	
+}
+@media (max-width: 767px){
+	
+}
+@media (max-width: 450px){
+	
+}

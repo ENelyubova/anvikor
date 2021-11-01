@@ -1,0 +1,32 @@
+$boxed: 'BoxedRegular';
+$boxedMedium: 'BoxedMedium';
+$boxedSemi: 'BoxedSemibold';
+$icomoon: 'icomoon';
+
+@font-face {
+  font-family: $boxed;
+  src: url('../fonts/BoxedRegular.ttf');
+  src: local('BoxedRegular'), local('BoxedRegular'),
+      url('../fonts/BoxedRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: $boxedMedium;
+  src: url('../fonts/BoxedMedium.ttf');
+  src: local('BoxedMedium'), local('BoxedMedium'),
+      url('../fonts/BoxedMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: $boxedSemi;
+  src: url('../fonts/BoxedSemibold.ttf');
+  src: local('BoxedSemibold'), local('BoxedSemibold'),
+      url('../fonts/BoxedSemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,63 @@
+.page-contacts{
+   
+}
+.page-map{
+    margin-top: 40px;
+    iframe{
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 1560px){
+    .page-contacts{
+        .btn-record{
+            &:after{
+                width: 55px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1430px){
+    .page-contacts{
+        table{
+            td{
+                font-size: 20px;
+                .tel{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px){
+    .page-contacts{
+        &-body{
+            padding: 20px;
+        }
+        table{
+            tr{
+                display: flex;
+                flex-direction: column;
+            }
+            td{
+                width: 100% !important;
+                font-size: 18px;
+                .tel{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .page-contacts{
+        .btn-record{
+            padding-right: 45px;
+            &:after{
+                display: none;
+            }
+        }
+    }
+}

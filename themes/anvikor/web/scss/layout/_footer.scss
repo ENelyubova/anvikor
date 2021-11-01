@@ -1,0 +1,199 @@
+.footer{
+    background: #F6F6F6;
+    &-panel{
+        padding: 55px 0;
+    }
+    &-heading{
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        @include fontF($boxed, 20px, 500, $color-black);
+        &-hide{
+            opacity: 0;
+        }
+    }
+    &-item{
+        width: calc(100% / 4 - 30px);
+        ul{
+            li{
+                padding-bottom: 20px;
+                a{
+                    line-height: 1.4;
+                    @include fontF($boxed, 16px, 500, $color-black);
+                    &:hover{
+                        color: $color-green;
+                    }
+                }
+                ul{
+                    display: none;
+                } 
+            }
+        }
+    }
+    &-logo{
+        .logo{
+            margin-bottom: 25px;
+        }
+        .footer-info{
+            margin-bottom: 25px;
+        }
+    }
+    .dc56{
+        p{
+            font-size: 14px;
+        }
+        a{
+            display: block;
+            /* margin-right: 35px;*/
+            width: 106px;
+            height: 24px;
+            background-image: url(../images/icon/DC.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    &-contacts{
+        &-item{
+            margin-bottom: 15px;
+            &.footer-contacts-phone{
+                a{
+                    display: block;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+    /*нижняя панель*/
+    &-bottom{
+        padding: 20px 0;
+        border-top: 1px solid #D9DDE8;
+    } 
+    &-info{
+        line-height: 1.4;
+        font-size: 14px;
+        color: rgba(117, 117, 117, 1);
+        &-bottom{
+            width: calc(75% - 30px);
+        }
+    }
+    &-payment{
+        width: calc(100% / 4 - 30px);
+        img{
+            margin-right: 10px;
+        }
+    }
+    .hide-footer{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1270px){
+    .footer{
+        &-heading{
+            font-size: 16px;
+        }
+        &-item{
+            ul{
+                li{
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &-logo{
+            width: 25%;
+            img{
+                width: 170px;
+                height: auto;
+            }
+        }
+        &-info{
+            font-size: 12px;
+        }
+        &-product{
+            width: 25%;
+            ul{
+                li{
+                    padding-bottom: 8px;
+                }
+            }
+        }
+        &-contacts{
+            font-size: 14px;
+            a{
+                font-size: 14px;
+            }
+        }
+        .dc56{
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .footer{
+        &-panel{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+        &-heading{
+            display: inline-block;
+            margin-bottom: 10px;
+            &-hide{
+                display: none;
+            }
+        }
+        &-item{
+            width: 100%;
+            margin-bottom: 20px;
+            ul{
+                li{
+                    padding-bottom: 8px;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &-bottom{
+            flex-direction: column;
+            justify-content: center;
+        }
+        &-logo{
+            width: 100%;
+            margin-bottom: 10px;
+            .logo{
+                margin-bottom: 15px;
+            }
+            .footer-info{
+                margin-bottom: 15px;
+            }
+        }
+        &-info{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .dc56{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        &-payment{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .footer{
+        &-item{
+            margin-bottom: 15px;
+        }
+    }
+}
